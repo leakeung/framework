@@ -1169,7 +1169,7 @@ class Request
     public function file($name = '')
     {
         if (empty($this->file)) {
-            $this->file = isset($_FILES) ? $_FILES : [];
+            return  $this->file = isset($_FILES) ? $_FILES : [];
         }
 
         $files = $this->file;
